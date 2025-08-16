@@ -1147,6 +1147,16 @@ body {
     display: flex;
     gap: 15px;
     margin-bottom: 20px;
+    flex-wrap: wrap; /* agar jagah kam ho to neeche line break ho jaye */
+    justify-content: center; /* center align */
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column; /* vertical stack */
+    align-items: center; /* horizontally center */
+    justify-content: center; /* vertically center */
+    text-align: center;
 }
 
 .footer-contact p {
@@ -1154,6 +1164,7 @@ body {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
+    justify-content: center; /* icon + text dono center */
     gap: 10px;
 }
 
@@ -1467,24 +1478,70 @@ body {
     display: none;
 }
 
+/* Typed text styling */
 #typed-text {
-  font-size: 3rem;        /* bada size */
+  font-size: 2.8rem;
   font-weight: 800;
+  line-height: 1.3;
+  text-align: left;
+  word-break: break-word;
 }
 
-#typed-text .white {
-  color: #ffffff;
+/* Different colors */
+#typed-text .white { color: #ffffff; }
+#typed-text .blue { color: #1e90ff; }
+#typed-text .yellow { color: #facc15; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  #typed-text { font-size: 1.8rem; text-align: center; }
+}
+@media (max-width: 480px) {
+  #typed-text { font-size: 1.4rem; }
 }
 
-#typed-text .blue {
-  color: #1e90ff;         /* bright blue */
+/* Contact info */
+.hero-contact {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 1rem;
+  color: var(--text-primary);
 }
 
-#typed-text .yellow {
-  color: #facc15;         /* warm yellow */
+.hero-contact .contact-item {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.typed-cursor {
-  font-size: 3rem;
-  color: #facc15;         /* cursor bhi yellow */
+/* Social links default */
+.hero-social {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+/* Mobile screen par center align */
+@media (max-width: 768px) {
+  .hero-contact {
+    text-align: center;
+  }
+
+  .hero-contact .contact-item {
+    justify-content: center;
+  }
+
+  .hero-social {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-social {
+    justify-content: center;
+  }
+  .footer-contact {
+    text-align: center;
+  }
 }

@@ -797,18 +797,19 @@ if ('serviceWorker' in navigator) {
     });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-  new Typed('#typed-text', {
+document.addEventListener("DOMContentLoaded", function () {
+  new Typed("#typed-text", {
     strings: [
-      "<span class='white'>Hi, I'm Ahzam Maqsood</span>",
+      "<span class='white'>Hi, I'm Ahzam Maqsood",
       "<span class='blue'>Digital Marketer</span>",
       "<span class='yellow'>Full-Stack Developer</span>"
     ],
-    typeSpeed: 80,
-    backSpeed: 50,
+    typeSpeed: 70,
+    backSpeed: 40,
     backDelay: 1500,
     loop: true,
     showCursor: true,
-    cursorChar: "|"
+    cursorChar: "|",
+    contentType: "html"  // zaroori hai taake <span> colors render ho
   });
 });
