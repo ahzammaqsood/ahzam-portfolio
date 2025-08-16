@@ -797,3 +797,18 @@ if ('serviceWorker' in navigator) {
     });
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+  new Typed('#typed-text', {
+    strings: [
+      "<span class='white'>Hi, I'm Ahzam Maqsood</span>",
+      "<span class='blue'>Digital Marketer</span>",
+      "<span class='yellow'>Full-Stack Developer</span>"
+    ],
+    typeSpeed: 80,
+    backSpeed: 50,
+    backDelay: 1500,
+    loop: true,
+    showCursor: true,
+    cursorChar: "|"
+  });
+});

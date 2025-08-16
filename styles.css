@@ -407,6 +407,28 @@ body {
     transform: translateY(-2px);
 }
 
+.btn-accent {
+  background: linear-gradient(135deg, #3b82f6, #2563eb); /* blue gradient */
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  border: none;
+}
+
+.btn-accent:hover {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
+}
+
+/* Icon animation */
+.btn-accent i {
+  transition: transform 0.3s ease;
+}
+
+.btn-accent:hover i {
+  transform: translateY(2px);
+}
+
 .hero-social {
     display: flex;
     gap: 15px;
@@ -1445,3 +1467,24 @@ body {
     display: none;
 }
 
+#typed-text {
+  font-size: 3rem;        /* bada size */
+  font-weight: 800;
+}
+
+#typed-text .white {
+  color: #ffffff;
+}
+
+#typed-text .blue {
+  color: #1e90ff;         /* bright blue */
+}
+
+#typed-text .yellow {
+  color: #facc15;         /* warm yellow */
+}
+
+.typed-cursor {
+  font-size: 3rem;
+  color: #facc15;         /* cursor bhi yellow */
+}
